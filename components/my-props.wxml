@@ -1,0 +1,3 @@
+<!--components/my-props.wxml-->
+<view>{{title}}</view>
+<view>我是内容</view>

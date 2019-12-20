@@ -1,14 +1,36 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/profile/profile",
+    "pages/category/category"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTitleText": "Portable Bookmark",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FFC0CB"
+  },
+  "tabBar": {
+    "selectedColor": "#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "Home",
+        "iconPath": "assets/tabbar/home_origin.png",
+        "selectedIconPath": "assets/tabbar/home.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "Category",
+        "iconPath": "assets/tabbar/category_origin.png",
+        "selectedIconPath": "assets/tabbar/category.png"
+      }
+    ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-props":"/components/my-props"
+  }
 }
