@@ -1,6 +1,6 @@
 //获取当前对象
 const app = getApp()
-console.log(app.globalData.name)
+
 //拿到后，可以在本页面使用，在其他页面进行共享
 Page({
   data:{

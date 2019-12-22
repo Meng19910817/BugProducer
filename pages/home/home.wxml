@@ -14,4 +14,4 @@
 <button style="margin:10rpx;" bind:tap="handleClickBtn1" size="mini">1</button>
 <button style="margin:10rpx;" bind:tap="handleClickBtn1" size="mini">2</button>
 <button style="margin:10rpx;" catch:tap="handleClickBtn1" size="mini">3</button> -->
-<my-props title="你好"/>
+<!-- <my-props title="你好"/> -->

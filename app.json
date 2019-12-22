@@ -1,13 +1,13 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/profile/profile",
-    "pages/category/category"
+    "pages/category/category",
+    "pages/me/me"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff5777",
-    "navigationBarTitleText": "Portable Bookmark",
+    "navigationBarTitleText": "IEILTS HELPER",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#FFC0CB"
   },
@@ -16,21 +16,28 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "Home",
-        "iconPath": "assets/tabbar/home_origin.png",
-        "selectedIconPath": "assets/tabbar/home.png"
+        "text": "首页",
+        "iconPath": "assets/tabbar/home/home_origin.png",
+        "selectedIconPath": "assets/tabbar/home/home.png"
       },
       {
         "pagePath": "pages/category/category",
-        "text": "Category",
-        "iconPath": "assets/tabbar/category_origin.png",
-        "selectedIconPath": "assets/tabbar/category.png"
+        "text": "分类",
+        "iconPath": "assets/tabbar/category/category_origin.png",
+        "selectedIconPath": "assets/tabbar/category/category.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "assets/tabbar/me/me_origin.png",
+        "selectedIconPath": "assets/tabbar/me/me.png"
       }
     ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "my-props":"/components/my-props"
+    "my-props": "/components/my-props/my-props",
+    "w-tab-control": "/components/w-tab-control/w-tab-control"
   }
 }

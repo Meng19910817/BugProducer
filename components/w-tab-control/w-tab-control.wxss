@@ -1,0 +1,17 @@
+/* components/wx-tab-control/wx-tab-control.wxss */
+.tab-control{
+  display: flex;
+  height: 40rpx;
+  line-height: 20rpx;
+}
+.tab-item{
+  flex:1;
+  padding: 40rpx;
+  text-align: center;
+}
+.active{
+  color: #ff5777;
+}
+.active text{
+  border-bottom: 4rpx solid #ff5777;
+}

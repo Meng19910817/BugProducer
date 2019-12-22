@@ -62,5 +62,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handleTabClick(event){
+    //监听category列表
   }
 })

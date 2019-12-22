@@ -1,41 +1,29 @@
+import request from "/utils/network.js"
 App({
-
-  /**
-   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
-   */
-  onLaunch: function () {
-    //初始化只执行一次的放这里
-  },
-
-  /**
-   * 当小程序启动，或从后台进入前台显示，会触发 onShow
-   */
-  onShow: function (options) {
-    //判断小程序进入场景，跳转页面
-    switch(options.scene){
-      case 1001:
-      break;
-
-    }
-    //获得用户信息，传给服务器
-    
-  },
-
-  /**
-   * 当小程序从前台进入后台，会触发 onHide
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
-   */
-  onError: function (msg) {
-    
-  },
   globalData:{
-    name:"James",
-    age:18
+    token:""
+  },
+  onLaunch: function () {
+    //登录
+    wx.login({
+      success: (res) => {
+          console.log(res)
+          //code只有五分钟有效期
+          const code = res.code
+        wx.request({
+          url: 'http://bug.mynatapp.cc/login/wxm',
+          method:'post',
+          data:{
+            code: code
+          },
+          success:(res)=>{
+            console.log(res)
+            // if(res.data.flag){
+            //     this.globalData.token =res.data.data.token
+            // }
+          }
+        })
+      }
+    })  
   }
 })
