@@ -1,0 +1,36 @@
+/* components/w-item/w-item.wxss */
+.popular-view {
+  margin-top: 40rpx;
+}
+.popular-item{
+  border-bottom:1px solid #eee;
+  margin: 0 20rpx;
+  margin-bottom: 10rpx;
+}
+.popular-likeCount{
+  float:right;
+}
+
+.popular-title{
+  color: #1296db;
+  margin-left:10rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: 350rpx;
+  margin-bottom: -5px;
+}
+.popular-like{
+  width: 40rpx;
+  height: 40rpx;
+  float:right;
+}
+.popular-hot{
+  width: 40rpx;
+  height: 40rpx;
+}
+.popular-hot-text{
+  width: 70rpx;
+  display: inline-block;
+}

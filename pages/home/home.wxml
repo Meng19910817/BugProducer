@@ -1,17 +1,10 @@
 <!--home.wxml-->
-<!-- <text>home.wxml</text>
-<input bindinput="handleInput"
-      bindfocus="handleFocus"
-      bindblur="handleBlur"/>
-<view wx:for="{{students}}">{{item.name}}--{{item.age}}</view>
-<view>{{counter}}</view>
-<button size="mini" bindtap="handleBtnClick">+1</button>
-<button size="mini" bindtap="handleMinusClick">-1</button>
-<button size="mini" bindtap="handleImage">获取用户图片</button>
-<image wx:for="{{10}}" src="{{imagePath}}" lazy-load bindload="handleLazyLoad" show-menu-by-longpress></image> -->
-<!-- <view class="{{isActive?' active':' '}}">哈哈哈</view>
-<button bindtap="handleChangeColor">变色</button>
-<button style="margin:10rpx;" bind:tap="handleClickBtn1" size="mini">1</button>
-<button style="margin:10rpx;" bind:tap="handleClickBtn1" size="mini">2</button>
-<button style="margin:10rpx;" catch:tap="handleClickBtn1" size="mini">3</button> -->
-<!-- <my-props title="你好"/> -->
+<w-swiper list="{{bannerList}}"/>
+<w-view list="{{recommondList}}"/>
+<w-tab-control titles="{{['热门','最新','精选']}}"
+bind:itemClick="handleTabClick"/>
+<w-item list="{{popularList}}"/>
+
+
+
+

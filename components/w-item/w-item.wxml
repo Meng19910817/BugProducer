@@ -1,0 +1,17 @@
+<!--components/w-item/w-item.wxml-->
+<view class="popular-view">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="popular-item">
+    <view>
+        <image class="popular-hot"src="/assets/icon/king.png"/>
+        <text class="popular-hot-text">No.{{index+1}}</text>
+        <text class="popular-title">{{item.title}}</text>
+        <image class="popular-like"src="/assets/icon/like.png"/>
+        <text class="popular-likeCount">{{item.likeCount}}</text>
+        </view>
+         
+    </view>
+     
+      
+  </block>
+</view>

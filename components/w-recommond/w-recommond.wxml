@@ -1,0 +1,9 @@
+<!--components/w-view/w-view.wxml-->
+<view class="recommond">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="recommond-item">
+      <image src="{{item.imgUrl}}"/>
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</view>

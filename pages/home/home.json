@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "首页"
+  "usingComponents": {
+    "w-swiper":"/components/w-swiper/w-swiper",
+    "w-view": "/components/w-recommond/w-recommond",
+    "w-item": "/components/w-item/w-item"
+  },
+  "navigationBarTitleText": "IEILTS HELPER"
 }

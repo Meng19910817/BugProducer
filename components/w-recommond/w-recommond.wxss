@@ -1,0 +1,22 @@
+/* components/w-view/w-view.wxss */
+.recommond{
+  display: flex;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 16rpx solid #eee;
+}
+.recommond-item{
+  flex: 1;
+  text-align: center; 
+}
+
+.recommond-item image {
+  width:180rpx;
+  height: 180rpx;
+}
+
+.recommond-item view { 
+  color: #ff5777;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
