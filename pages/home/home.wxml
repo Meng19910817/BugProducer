@@ -1,10 +1,6 @@
 <!--home.wxml-->
 <w-swiper list="{{bannerList}}"/>
-<w-view list="{{recommondList}}"/>
+<w-recommond list="{{recommondList}}"/>
 <w-tab-control titles="{{['热门','最新','精选']}}"
 bind:itemClick="handleTabClick"/>
-<w-item list="{{popularList}}"/>
-
-
-
-
+<w-item list="{{articles[currentType].list}}"/>

@@ -21,6 +21,19 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    handleListening(){
+        wx.navigateTo({
+          url: '/pages/listen/listen?category=L',
+        })
+    },
+    handleSpeaking(){
+      console.log("口语")
+    }, 
+    handleReading(){
+      console.log("阅读")
+    }, 
+    handleWriting(){
+      console.log("写作")
+    }
   }
 })

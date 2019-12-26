@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/category/category",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/listen/listen"
   ],
   "window": {
     "backgroundTextStyle": "light",

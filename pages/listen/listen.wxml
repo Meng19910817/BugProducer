@@ -1,13 +1,15 @@
-<!--components/w-item/w-item.wxml-->
+<!--pages/listen/listen.wxml-->
+
+<w-tab-control titles="{{['听力']}}"/>
 <view class="popular-view">
-  <block wx:for="{{list}}" wx:key="{{index}}">
+  <block wx:for="{{articles.list}}" wx:key="{{index}}">
     <view class="popular-item">
     <view>
         <image class="popular-hot"src="/assets/icon/king.png"/>
         <text class="popular-title">{{item.title}}</text>
-        <text class="popular-hot-text">No.{{index+1}}</text>
-        </view>
-         
+        <text class="popular-hot-text">{{item.creator}}</text>
+        </view> 
     </view>   
   </block>
 </view>
+<w-back-top/>

@@ -2,8 +2,10 @@
 <view class="recommond">
   <block wx:for="{{list}}" wx:key="{{index}}">
     <view class="recommond-item">
-      <image src="{{item.imgUrl}}"/>
-      <view>{{item.title}}</view>
+      <view wx:if="{{item.title == 'L'}}" bindtap="handleListening"><image src="{{item.imgUrl}} "/>听力</view>
+      <view wx:if="{{item.title == 'S'}}" bindtap="handleSpeaking"><image src="{{item.imgUrl}}"/>口语</view>
+      <view wx:if="{{item.title == 'R'}}" bindtap="handleReading"><image src="{{item.imgUrl}}"/>阅读</view>
+      <view wx:if="{{item.title == 'W'}}" bindtap="handleWriting"><image src="{{item.imgUrl}}"/>写作</view>
     </view>
   </block>
 </view>
